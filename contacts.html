@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acunetix Security Inc. - Talk to Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: rgb(218, 190, 190);
+        }
+        header {
+            background-color: #003366;
+            color: gold;
+            text-align: center;
+            padding: 2.5em 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 2em auto;
+            background-color: white;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info h2 {
+            color: green;
+            margin-bottom: 1em;
+        }
+        .contact-info p {
+            color: blue;
+            margin-bottom: 1em;
+        }
+        .contact-info p {
+            margin-bottom: 1.5em;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 2em;
+        }
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .social-links a:hover {
+            background-color: #0056b3;
+        }
+        .social-links img {
+            width: 24px;
+            height: 24px;
+        }
+        footer {
+            background-color: #003366;
+            color: ;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Talk to Us - Acunetix Security Inc.</h1>
+        <p>We're here to help. Get in touch with our team.</p>
+    </header>
+
+    <div class="container">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>For inquiries, support, or more information about our cybersecurity services, please contact us:</p>
+            <p><strong>Email:</strong> <a href="mailto:info@acunetixsecurity.com">info@acunetixsecurity.com</a></p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Address:</strong> 456 Tech3 Silicon View Street, Silicon Valley, CA, USA</p>
+
+            <h2>Connect With Us</h2>
+            <p>Follow us on our social media channels for the latest updates and cybersecurity insights:</p>
+
+            <div class="social-links">
+                <a href="https:www.linkedin.com/in/iddy-k-chesire-55009b264" target="_blank" rel="noopener noreferrer">
+                    <img src="linkedin-icon.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="instagram-icon.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Acunetix Security Inc. | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Replace placeholder image URLs with actual social media icon URLs.
+        const socialIcons = document.querySelectorAll('.social-links img');
+        socialIcons.forEach(img => {
+            if (img.alt === 'LinkedIn') {
+                img.src = 'linkedin.jpg'; // Replace with your LinkedIn icon URL
+            } else if (img.alt === 'Facebook') {
+                img.src = 'facebook.jpg'; // Replace with your Facebook icon URL
+            } else if (img.alt === 'Instagram') {
+                img.src = 'instagram.jpg'; // Replace with your Instagram icon URL
+            }
+        });
+    </script>
+</body>
+</html>

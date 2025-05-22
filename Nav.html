@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acunetix Security Inc. - Dashboard</title>
+    <style>
+        body 
+        {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: grey;
+        }
+
+        nav 
+        {
+            background-color: #333;
+            color: white;
+            padding: 16px;
+        }
+
+        nav ul 
+        {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav li a 
+        {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav li a:hover 
+        {
+            background-color: green;
+        }
+        .nav a
+        {
+            color:blue;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+
+        .container 
+        {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .sidebar 
+        {
+            background-color: silver;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .content 
+        {
+            background-color: silver;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .content h3
+        {
+            color:red;
+        }
+        .widget 
+        {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        footer 
+        {
+            background-color: aqua;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            margin-top: 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (min-width: 768px) 
+        {
+            .container 
+            {
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            .sidebar 
+            {
+                flex: 0 0 30%;
+                margin-bottom: 0;
+            }
+            .sidebar h2 
+            {
+                color: blue;
+                margin-bottom: 10px;
+            }
+            .content 
+            {
+                flex: 1;
+            }
+            .content h1
+            {
+                flex: 1;
+                color:green;
+            }
+            .widgets-container 
+            {
+                display: flex;
+                gap: 20px;
+                background-color: green;
+            }
+
+            .widget 
+            {
+                flex: 1;
+                margin-bottom: 0;
+            }
+        }
+
+        @media (min-width: 1024px) 
+        {
+            nav ul 
+            {
+                justify-content: flex-start;
+                gap: 32px;
+                padding-left: 32px;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Acunetix Security Inc. More Services</h2>
+            <p>Enhance your security posture with our premium cybersecurity products.</p>
+            <ul type="square">
+                <li>Web Application Security Testing</li>
+                <li>Network Security Assessments</li>
+                <li>API Security Testing</li>
+                <li>Secure Code Analyzer</li>
+                <li>Phishing Defense Training Package</li>
+            </ul>
+            
+        </aside>
+
+        <main class="content">
+            <h1>Acunetix Security Inc. - Comprehensive Cybersecurity Services</h1>
+            <p>Protecting your digital assets with advanced security solutions.</p>
+
+            <div class="widgets-container">
+                <div class="widget">
+                    <h3>Web Application Security Testing</h3>
+                    <p>Ensure your web applications are robust against cyber threats with our expert testing services.</p>
+                    <ul>
+                        <li>Automated Vulnerability Scanning</li>
+                        <li>Manual Penetration Testing</li>
+                        <li>OWASP Top 10 Compliance Checks</li>
+                        <li>Detailed Security Reports and Remediation Guidance</li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3>Network Security Assessments</h3>
+                    <p>Identify and mitigate network vulnerabilities to safeguard your critical infrastructure.</p>
+                    <ul>
+                        <li>Comprehensive Network Scanning</li>
+                        <li>Firewall and Router Configuration Reviews</li>
+                        <li>Wireless Network Security Audits</li>
+                        <li>Intrusion Detection and Prevention Analysis</li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3>Incident Response and Forensics</h3>
+                    <p>Rapidly respond to security incidents and conduct thorough forensic investigations.</p>
+                    <ul>
+                        <li>Incident Response Planning and Execution</li>
+                        <li>Malware Analysis and Reverse Engineering</li>
+                        <li>Data Breach Investigations and Recovery</li>
+                        <li>Digital Forensics and Evidence Collection</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p><a href="mailto:info@acunetixsecurity.com">Contact Us</a></p>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Acunetix Security Inc. | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acunetix Security Inc. - Cybersecurity Vulnerabilities</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 2.5em 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2em auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .vulnerability {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .vulnerability:hover {
+            transform: translateY(-5px);
+        }
+        .vulnerability h2 {
+            color: green; /* Red for vulnerability title */
+            margin-bottom: 10px;
+        }
+        .vulnerability p {
+            margin-bottom: 15px;
+        }
+        .vulnerability .severity {
+            font-weight: bold;
+            color: #f0ad4e; /* Orange for severity */
+            margin-bottom: 15px;
+        }
+        .vulnerability .learn-more {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .vulnerability .learn-more:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #003366;
+            color: gold;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Acunetix Security Inc. - Common Cybersecurity Vulnerabilities</h1>
+        <p>Understanding and mitigating common security threats.</p>
+    </header>
+
+    <div class="container">
+
+        <div class="vulnerability">
+            <h2>SQL Injection</h2>
+            <p>A code injection technique that exploits security vulnerabilities in a website's database layer.</p>
+            <p class="severity">High Severity</p>
+            <a href="https://talosintelligence.com/" class="learn-more">Learn More</a>
+        </div>
+
+        <div class="vulnerability">
+            <h2>Cross-Site Scripting (XSS)</h2>
+            <p>A type of injection, in which malicious scripts are injected into otherwise benign and trusted websites.</p>
+            <p class="severity">High Severity</p>
+            <a href="https://talosintelligence.com/" class="learn-more">Learn More</a>
+        </div>
+
+        <div class="vulnerability">
+            <h2>Cross-Site Request Forgery (CSRF)</h2>
+            <p>An attack that forces an authenticated user to execute unwanted actions on a web application.</p>
+            <p class="severity">Medium Severity</p>
+            <a href="https://talosintelligence.com/" class="learn-more">Learn More</a>
+        </div>
+
+        <div class="vulnerability">
+            <h2>Security Misconfiguration</h2>
+            <p>Improperly configured security settings can leave applications and systems vulnerable.</p>
+            <p class="severity">Medium Severity</p>
+            <a href="https://talosintelligence.com/" class="learn-more">Learn More</a>
+        </div>
+
+        <div class="vulnerability">
+            <h2>Broken Authentication</h2>
+            <p>Flaws in authentication and session management can allow attackers to compromise passwords and sessions.</p>
+            <p class="severity">High Severity</p>
+            <a href="https://talosintelligence.com/" class="learn-more">Learn More</a>
+        </div>
+
+        <div class="vulnerability">
+            <h2>Sensitive Data Exposure</h2>
+            <p>Exposing sensitive data, such as passwords or credit card numbers, can lead to severe consequences.</p>
+            <p class="severity">Critical Severity</p>
+            <a href="https://talosintelligence.com/" class="learn-more">Learn More</a>
+        </div>
+
+    </div>
+
+    <footer>
+        <p style="color:white;"><a href="services.html" >Cybersecurity Services</a> | <a href="store.html">Cybersecurity Store</a></p>
+        <p>&copy; 2024 Acunetix Security Inc.</p>
+    </footer>
+
+</body>
+</html>

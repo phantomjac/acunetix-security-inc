@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acunetix Security Inc. - Account Information</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #003366;
+            color: gold;
+            text-align: center;
+            padding: 2.5em 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 2em auto;
+            background-color: white;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .account-info h2 {
+            color: #003366;
+            margin-bottom: 1em;
+        }
+        .account-info p {
+            margin-bottom: 1em;
+        }
+        .account-info label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        .account-info input[type="text"],
+        .account-info input[type="email"],
+        .account-info input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .account-info button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .account-info button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Acunetix Security Inc. - Account Information</h1>
+        <p>Manage your account details and security settings.</p>
+    </header>
+
+    <div class="container">
+        <div class="account-info">
+            <h2>Your Account Details</h2>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" value="john_doe" readonly>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" value="john.doe@example.com">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" value="********">
+
+            <label for="company">Company:</label>
+            <input type="text" id="company" value="Acunetix Security Inc.">
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" value="+1 555-123-4567">
+
+            <button>Update Account</button>
+            <button style="background-color: #d9534f;">Change Password</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Acunetix Security Inc. | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
